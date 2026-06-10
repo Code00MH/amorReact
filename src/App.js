@@ -10,9 +10,7 @@ const [showCelebration, setShowCelebration] = useState(false);
 const [showMusic, setShowMusic] = useState(false);
 const [openingLetter, setOpeningLetter] = useState(false);
 const [showMessage, setShowMessage] = useState(false);
-const [showGiftButton, setShowGiftButton] = useState(false);
-const [closingMessage, setClosingMessage] = useState(false);
-const [showPresent, setShowPresent] = useState(false);
+const [closingMessage] = useState(false);
 
   useEffect(() => {
     const startFadeOutAfter = 2300;
@@ -358,10 +356,6 @@ const [showPresent, setShowPresent] = useState(false);
     <button
       onClick={() => {
         setShowMessage(true);
-
-        setTimeout(() => {
-          setShowGiftButton(true);
-        }, 7000);
       }}
       className="bg-red-900 hover:bg-red-700 transition px-7 py-3 rounded-full shadow-lg"
     >
